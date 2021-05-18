@@ -14,11 +14,11 @@ endif()
 # Windows support coming soon
 if(NOT WIN32)
   # On Ubuntu 16.04 CMake support is limited
-  if ((${LINUX_FLAVOR} STREQUAL "Ubuntu") AND (${LINUX_VERSION} STREQUAL "16.04"))
-    set(RapidJSON_VERSION_MAJOR 0)
-  else()
-    find_package(RapidJSON REQUIRED)
-  endif()
+  # if ((${LINUX_FLAVOR} STREQUAL "Ubuntu") AND (${LINUX_VERSION} STREQUAL "16.04"))
+  #   set(RapidJSON_VERSION_MAJOR 0)
+  # else()
+  find_package(RapidJSON REQUIRED)
+  # endif()
 endif()
 
 # -----------------------------------------------------------------------------
